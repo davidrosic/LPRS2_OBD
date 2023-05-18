@@ -1,0 +1,3 @@
+OBD2 pinout link -> https://www.flexihub.com/oobd2-pinout/
+
+Arduino can shield v2.0 link -> https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/
