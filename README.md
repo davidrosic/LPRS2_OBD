@@ -24,14 +24,14 @@ The goal was to read a car's state over the OBD-II port, with the diagnostic sid
 
 ## Outcome
 
-The project did not reach a working end-to-end diagnostic. Messages sent from one Arduino were never received by the other when a V3 shield was in the setup, even though the same code worked with V2 shields. The team found this by:
+The project did not reach a working end-to-end diagnostic. Messages sent from one Arduino were never received by the other once a V3 shield was in the setup, although the other team's earlier V2 setup had worked. The team narrowed it down by:
 
 - comparing which shield and library combinations worked in a test matrix,
 - tracing which TX/RX registers became active on each board,
 - trying nine different CAN and OBD-II libraries and their examples,
 - comparing signals with an oscilloscope.
 
-The report concludes that the V3 and V2 shields could not communicate with each other, and suggests using two V2 shields instead. The ECU-side sketch and the send/receive tests run on matching V2 hardware.
+The report concludes that the V3 and V2 shields could not communicate with each other, and suggests using two V2 shields instead.
 
 ## Build
 
